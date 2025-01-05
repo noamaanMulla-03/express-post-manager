@@ -1,0 +1,53 @@
+<!-- Home Page Sample -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+		<title>Home Page</title>
+	</head>
+	<body>
+		<div class="form-container">
+			<form class="form" id="post-form">
+				<div class="form-group">
+					<label for="title">Title</label>
+					<input
+						required="true"
+						name="title"
+						id="title"
+						type="text"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="textarea">Content</label>
+					<textarea
+						required="true"
+						cols="50"
+						rows="10"
+						id="content"
+						name="content"
+					></textarea>
+				</div>
+				<div class="btn-group">
+					<button type="submit" class="form-submit-btn">
+						Submit
+					</button>
+					<button
+						type="button"
+						class="form-submit-btn"
+						id="get-posts-btn"
+					>
+						Get Posts
+					</button>
+				</div>
+			</form>
+		</div>
+		<div id="posts"></div>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
